@@ -1,7 +1,7 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
 
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nunito+Sans&family=Raleway&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2? y=Lato&family=Montserrat&family=Nunito+Sans&family=Raleway&family=Roboto&display=swap");
 
 /** Ionic CSS Variables **/
 :root {
@@ -221,10 +221,11 @@ http://ionicframework.com/docs/theming/ */
 }
 
 /* -------------------------------------- FONTS ------------------------------------- */
-body {
-  --ion-font-text: "Nunito Sans", "Montserrat", "Lato", "Raleway", "Roboto",
+:root {
+  --ion-font-family: "","Nunito Sans", "Montserrat", "Lato", "Raleway", "Roboto",
     sans-serif;
-
+}
+body{
   --ion-weight-extra-light: 200;
   --ion-weight-light: 300;
   --ion-weight-regular: 400;
