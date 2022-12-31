@@ -14,6 +14,14 @@ import { ellipse, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
+import Forgetpass from './pages/Forget Pass/Forgetpass';
+import Verifyemail from './pages/Forget Pass/Verifyemail';
+import Newpass from './pages/Forget Pass/Newpass';
+import './Quiz.css';
+import MainQuiz from "./components/Quiz/MainQuiz";
+
+// import "./quiz.css";
+// import MainQuiz from "./components/MainQuiz";
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -38,7 +46,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
+    {/* <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/tab1">
@@ -69,7 +77,13 @@ const App: React.FC = () => (
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
-    </IonReactRouter>
+    </IonReactRouter> */}
+    {/* <Forgetpass/> */}
+    {/* <Verifyemail/> */}
+    {/* <Newpass/> */}
+    
+      <MainQuiz />
+ 
   </IonApp>
 );
 

@@ -1,0 +1,45 @@
+p {
+    font-family: var( --ion-font-text);
+    margin-top: 220px;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+h6 {
+    font-family: var( --ion-font-text);
+    font-weight: 400;
+    font-size: 14px;
+   
+}
+
+.input-text {
+    margin-top: 60px;
+}
+
+.label {
+    color: red;
+}
+
+.btn {
+    font-family: var( --ion-font-text);
+    width: 149px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0px;
+    margin: auto;
+    margin-top: 60px;
+    --background: var(--ion-color-success);
+}
+
+.input {
+    background: #D9D9D9;
+    border-radius: 10px;
+    width: 305px;
+    height: 50px !important;
+
+
+}
