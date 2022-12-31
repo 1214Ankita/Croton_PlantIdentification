@@ -1,0 +1,79 @@
+.HomeTop-main {
+  width: 100%;
+  height: 30px;
+  color: var(--ion-white);
+}
+
+.HomeTop-bg {
+  background: url(https://images.unsplash.com/photo-1467241850596-6a0de48568da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.311));
+  background-blend-mode: color;
+  background-size: cover;
+  width: 100vw;
+  height: 70%;
+  position: absolute;
+  z-index: -1;
+}
+
+.HomeTop-header {
+  justify-content: space-between;
+  margin: 16px;
+}
+
+.HomeTop-header ion-icon {
+  padding-left: 10px;
+}
+
+.HomeTop-search {
+  height: 48px;
+  padding: 0px;
+  width: auto;
+  margin: 30px 16px;
+  --background:rgb(0,0,0,0.4);
+  --placeholder-opacity: 1;
+  --icon-color: white;
+  border: 1.5px solid #daded8;
+  border-radius: 8px;
+  --color: var(--ion-white);
+}
+
+.HomeTop-user {
+  width: 90%;
+  margin: 0px 5%;
+  background: #ede169;
+  border-radius: 20px;
+  padding: 14px;
+}
+
+.HomeTop-username {
+  margin: auto;
+}
+
+.HomeTop-username .welcome {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #57855e;
+}
+
+.HomeTop-username .username {
+  font-weight: 700;
+  font-size: 26px;
+  color: #57855e;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.HomeTop-usericon {
+  height: 97px;
+  border-radius: 50px;
+  width: 97px;
+  background-image: linear-gradient(180deg, #578857, #57885700);
+  justify-content: center;
+  align-items: center;
+}
+
+.HomeTop-usericon ion-avatar {
+  height: 63px;
+  width: 63px;
+}

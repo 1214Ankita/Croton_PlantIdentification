@@ -2,7 +2,7 @@
 http://ionicframework.com/docs/theming/ */
 
 @import url("https://fonts.googleapis.com/css2? y=Lato&family=Montserrat&family=Nunito+Sans&family=Raleway&family=Roboto&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 /** Ionic CSS Variables **/
 :root {
   --ion-color-primary: #57855e;
@@ -142,7 +142,7 @@ http://ionicframework.com/docs/theming/ */
     --ion-background-color: #000000;
     --ion-background-color-rgb: 0, 0, 0;
 
-    --ion-text-color: #ffffff;
+    --ion-text-color: #f8f8f8;
     --ion-text-color-rgb: 255, 255, 255;
 
     --ion-color-step-50: #0d0d0d;
@@ -185,7 +185,7 @@ http://ionicframework.com/docs/theming/ */
     --ion-background-color: #121212;
     --ion-background-color-rgb: 18, 18, 18;
 
-    --ion-text-color: #ffffff;
+    --ion-text-color: #f8f8f8;
     --ion-text-color-rgb: 255, 255, 255;
 
     --ion-border-color: #222222;
@@ -222,10 +222,10 @@ http://ionicframework.com/docs/theming/ */
 
 /* -------------------------------------- FONTS ------------------------------------- */
 :root {
-  --ion-font-family: "","Nunito Sans", "Montserrat", "Lato", "Raleway", "Roboto",
-    sans-serif;
+  --ion-font-family: "Reem Kufi", "Nunito Sans", "Montserrat", "Lato", "Raleway",
+    "Roboto", sans-serif;
 }
-body{
+body {
   --ion-weight-extra-light: 200;
   --ion-weight-light: 300;
   --ion-weight-regular: 400;
@@ -238,4 +238,8 @@ body{
   --ion-size-regular: 18px;
   --ion-size-big: 20px;
   --ion-size-extra-big: 26px;
+
+  /* Colors */
+  --ion-white: #f8f8f8;
+  --ion-dark: #2f2f2f;
 }

@@ -19,6 +19,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import { Auth } from './pages/Routes';
+import './App.css'
 
 setupIonicReact();
 

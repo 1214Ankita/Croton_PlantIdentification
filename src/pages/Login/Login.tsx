@@ -35,7 +35,7 @@ export const Login: React.FC = () => {
                 type: "USER_STATE",
                 payload: res.user.email
             })
-            history.replace('/tabs')
+            history.replace('/tab1')
             toast("Successfully logged in!")
         }
         setBusy(false)
@@ -47,7 +47,7 @@ export const Login: React.FC = () => {
                     <IonTitle>Login</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent fullscreen class='login'>
+            <IonContent fullscreen class='login ion-padding' >
                 <IonLoading message="Please wait..." duration={0} isOpen={busy}/>
                 <IonInput placeholder='Username'
                     onIonChange={(e: any) => setUsername(e.target.value)} />
