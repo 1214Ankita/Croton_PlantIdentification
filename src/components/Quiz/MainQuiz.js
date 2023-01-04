@@ -1,6 +1,7 @@
 import React from "react";
 import { quizData } from "./quizData";
-
+import { IonIcon } from "@ionic/react";
+import { arrowBack } from "ionicons/icons";
 
 class MainQuiz extends React.Component {
   state = {
@@ -95,6 +96,7 @@ class MainQuiz extends React.Component {
           <img className="quiz_plant1" src="https://s3-alpha-sig.figma.com/img/e03f/20c1/2ded1b8e6b5d79dd576be89b63ad6643?Expires=1673222400&Signature=oZjveRncqGcE22A8~K2jNe61CZfKp2-o43nyCievTgEBPVqOcqLwl-DW4lgh52wpBdHL3aPkxFOcTaM2RbkcgnGifm0gG0juooJSRGR5eKQVb9UF2-H7vZIUIH2vvIegk94NkWjS~hF1AWNXF2iaJmAwhSv3FbMmTUv6ky3rj6ixej4GfW7Km5NkvaQk9o0AZpk2PehuTN9ufe05F4bEwcpsrzlOpfrf3TZ5siZfNEtuoaUrl7W0GwgytqaePoRWBIgYGObgqpm7TaX3ZwgYj1BiRQgGVvePAIV0h~v7BwAx3KVUujm1H~Lkl27sxzrXzPdO3hX9EJxFiEgXoG0Yeg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="Quiz_plant1" />
           <img className="quiz_plant2" src="https://s3-alpha-sig.figma.com/img/de30/587f/0aa406763969bacc0545efbb5979294b?Expires=1673222400&Signature=NOUg5cg97ZtXd1FBaPB2s8PNozizoyTJ8XaHZWFNW9QSGrwny1EAjThSWraiMEeHLUL0tBcR6I9zNL702eYAi6O9862FK5c5pNd5csX~Hxt886mpmHZ3-ghNJiz5YJB3dnhTzr8R9wjJh~I1~0kECjLjnEaoLIRhSMf2XpFhp5qWbpq8ESZ3HKHnPfGM9bpz263gZJII8FfUYztQuSFhmCowk44ZChITdIhlmXRwxfDUdB-qfUSWOFBbAA0AF6JoZvIl-SmqtF9uJL5V6l38KAqhTwUhQVmG200x5qMfmYuvk3h5A4ph2wt8Y4wEayJm4s-j-vQtKetps6tx3wiuYQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="Quiz_plant1" />
           <div className="App">
+         <IonIcon class="quiz_back_arrow" icon={arrowBack}></IonIcon>
             <p className="quiz_head">Quiz</p>
             <p className="quiz_ques">{this.state.questions} </p>
             {/* <span>{`Questions ${currentQuestion}  out of ${quizData.length -

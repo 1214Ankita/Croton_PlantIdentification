@@ -1,34 +1,28 @@
 import { IonContent, IonHeader, IonPage, IonText, IonTitle, IonToolbar } from '@ionic/react';
-import { IonInput, IonItem, IonLabel, IonList, IonSelect,IonSelectOption,IonTextarea,IonButton} from '@ionic/react';
-import './Verifyemail.css';
+import { IonInput, IonItem, IonLabel, IonList, IonSelect, IonSelectOption, IonTextarea, IonButton } from '@ionic/react';
+import "./Verifyemail.css";
 
 const Verifyemail: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-      
-          
-      </IonHeader>
 
       <IonContent class="ion-padding">
-        <IonHeader>
+        <IonHeader></IonHeader>
+        <p className='verify_head'>Verify Email</p>
+        <h6 className='verify_subhead'>Enter the Verification code we just sent to your  email address</h6>
 
-       
-        </IonHeader>
-        <p>Verify Email</p>
-        <h6>Enter the Verification code we just sent to your  email address</h6>
-       
-  
-        <IonList class="input-text">
-        <IonItem lines="none">
-            <IonLabel class="label" position="stacked" >Verfication Code</IonLabel>
-            <IonInput class="input" placeholder='Enter'></IonInput>
-            
+
+        <IonList className="verify_input_text">
+          <IonItem lines="none">
+            <IonLabel className='verify_label' position="stacked" >Verfication Code</IonLabel>
+            <IonInput className='verify_input' placeholder='Enter'></IonInput>
+
           </IonItem>
+          
+          <IonButton shape='round' className='verify_btn'>Submit</IonButton>
+        </IonList>
 
-          <IonButton shape="round"  class="btn">Submit</IonButton>
-          </IonList>
-        
+
       </IonContent>
     </IonPage>
   );

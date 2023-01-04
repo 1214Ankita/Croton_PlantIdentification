@@ -80,9 +80,9 @@ const App: React.FC = () => (
     </IonReactRouter> */}
     {/* <Forgetpass/> */}
     {/* <Verifyemail/> */}
-    {/* <Newpass/> */}
+    <Newpass/>
     
-      <MainQuiz />
+      {/* <MainQuiz /> */}
  
   </IonApp>
 );

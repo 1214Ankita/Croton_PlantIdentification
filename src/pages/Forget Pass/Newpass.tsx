@@ -1,5 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonText, IonTitle, IonToolbar } from '@ionic/react';
 import { IonInput, IonItem, IonLabel, IonList, IonSelect,IonSelectOption,IonTextarea,IonButton} from '@ionic/react';
+import "./Newpass.css";
 
 const Newpass: React.FC = () => {
   return (
@@ -14,24 +15,24 @@ const Newpass: React.FC = () => {
 
        
         </IonHeader>
-        <p>Create New Password</p>
-        <h6>Your new password must be different from the previously used password </h6>
+        <p className="newpass_head">Create New Password</p>
+        <h6 className="new_subpass_head">Your new password must be different from the previously used password </h6>
        
   
         <IonList class="input-text" lines="none">
         <IonItem>
-            <IonLabel class="label" position="stacked" >New Password</IonLabel>
-            <IonInput class="input" placeholder='Enter new password'></IonInput>
+            <IonLabel className='newpass_label' position="stacked" >New Password</IonLabel>
+            <IonInput className="newpass_input" placeholder='Enter new password'></IonInput>
             
           </IonItem>
 
           <IonItem>
-            <IonLabel class="label" position="stacked" >Confirm Password</IonLabel>
-            <IonInput class="input" placeholder='Enter new password'></IonInput>
+            <IonLabel className="newpass_label" position="stacked" >Confirm Password</IonLabel>
+            <IonInput className="newpass_input" placeholder='Enter new password'></IonInput>
             
           </IonItem>
 
-          <IonButton shape="round"  class="btn">Submit</IonButton>
+          <IonButton shape="round" className="btn">Submit</IonButton>
           </IonList>
         
       </IonContent>

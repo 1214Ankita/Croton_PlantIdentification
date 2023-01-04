@@ -1,4 +1,4 @@
-p {
+.forget_head{
     font-family: var( --ion-font-text);
     margin-top: 220px;
     font-weight: 700;
@@ -6,7 +6,7 @@ p {
     margin-bottom: 0px;
 }
 
-h6 {
+.forget_sub{
     font-family: var( --ion-font-text);
     font-weight: 400;
     font-size: 14px;
@@ -17,29 +17,36 @@ h6 {
     margin-top: 60px;
 }
 
-.label {
-    color: red;
+.forget_label {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--ion-color-primary);
+    margin-bottom: 0px;
 }
 
-.btn {
-    font-family: var( --ion-font-text);
-    width: 149px;
-    height: 55px;
+.forget_btn {
+   
+    width: 149px;;
+    height: 45px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 0px;
     margin: auto;
-    margin-top: 60px;
-    --background: var(--ion-color-success);
+    margin-top: 46px;
+    --background: #57855E;
+    color: var(  --ion-color-primary-contrast);
+    border-radius: 50px;
 }
 
-.input {
+.forget_input {
+    width: 300px;
+    height: 45px;
     background: #D9D9D9;
     border-radius: 10px;
-    width: 305px;
-    height: 50px !important;
+    align-items: start;
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ABABAB;
+    margin-bottom: 10px;
 
 
 }

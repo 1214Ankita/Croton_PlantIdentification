@@ -10,19 +10,19 @@ const Forgetpass: React.FC = () => {
         </IonHeader>
         <div className='main'>
           <div className='header'>
-            <p>Reset Password</p>
-            <h6>Please Enter your Email ID to reset your password</h6>
+            <p className='forget_head'>Reset Password</p>
+            <h6 className='forget_sub'>Please Enter your Email ID to reset your password</h6>
           </div>
 
           <div className="main-content">
             <IonList class="input-text">
               <IonItem lines="none">
-                <IonLabel class="label" position="stacked" >Enter Email</IonLabel>
-                <IonInput class="input" placeholder='Enter'></IonInput>
+                <IonLabel className='forget_label' position="stacked" >Enter Email</IonLabel>
+                <IonInput className="forget_input" placeholder='Enter'></IonInput>
 
               </IonItem>
 
-              <IonButton shape="round" class="btn">Submit</IonButton>
+              <IonButton  shape='round' className="forget_btn">Submit</IonButton>
             </IonList>
           </div>
 
