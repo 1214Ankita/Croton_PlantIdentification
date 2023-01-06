@@ -20,6 +20,7 @@ import Tab3 from './Tab3';
 import { Login } from './Login/Login';
 import { Register } from './Register/Register';
 import React, { useEffect, useState } from 'react';
+
 import { getCurrentUser } from '../firebaseConfig'
 import { useDispatch } from 'react-redux';
 import './Routes.css'
@@ -57,6 +58,7 @@ const Routing: React.FC = () => {
                         <IonIcon icon={qrCode}></IonIcon>
                     </IonFabButton>
                 </IonFabList>
+
             </IonFab>
         </IonApp>
     );

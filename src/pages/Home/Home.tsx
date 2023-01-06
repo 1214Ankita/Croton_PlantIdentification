@@ -1,6 +1,8 @@
+
 import { IonButton, IonContent, IonIcon, IonLabel, IonLoading, IonPage, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import { useState } from 'react';
 import { Redirect, Route, useHistory } from 'react-router';
+
 import { logoutuser } from '../../firebaseConfig';
 import './Home.css';
 import { HomeTop } from '../../components/Home/HomeTop';
@@ -12,6 +14,7 @@ import Tab2 from '../Tab2';
 import { Login } from '../Login/Login';
 import { cube, home, person } from 'ionicons/icons';
 import { TabBar } from '../Routes';
+
 
 const Tab1: React.FC = () => {
   const history = useHistory()
