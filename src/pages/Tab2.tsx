@@ -1,4 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { TabBar } from './Routes';
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
@@ -16,6 +17,7 @@ const Tab2: React.FC = () => {
           </IonToolbar>
         </IonHeader>
       </IonContent>
+      <TabBar />
     </IonPage>
   );
 };

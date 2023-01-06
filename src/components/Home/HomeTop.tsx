@@ -1,9 +1,9 @@
-import { IonAvatar, IonCol, IonContent, IonIcon, IonPage, IonRow, IonSearchbar, IonText } from '@ionic/react';
+import { IonAvatar, IonCol, IonIcon, IonRow, IonSearchbar, IonText } from '@ionic/react';
 
 import { useSelector } from 'react-redux';
 
 import './HomeTop.css';
-import { settings, alarm, alert, notifications } from 'ionicons/icons';
+import { settings, notifications } from 'ionicons/icons';
 
 export const HomeTop: React.FC = () => {
     const username = useSelector((state: any) => state.AppReducer.user.username);
