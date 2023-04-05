@@ -1,4 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import MainQuiz from './Quiz/MainQuix';
 import { TabBar } from './Routes';
 import './Tab2.css';
 
@@ -16,7 +17,9 @@ const Tab2: React.FC = () => {
             <IonTitle size="large">Tab 2</IonTitle>
           </IonToolbar>
         </IonHeader>
+        <MainQuiz/>
       </IonContent>
+      
       <TabBar />
     </IonPage>
   );

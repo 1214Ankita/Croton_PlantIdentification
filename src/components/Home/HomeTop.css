@@ -18,10 +18,13 @@
 .HomeTop-header {
   justify-content: space-between;
   margin: 16px;
+  
 }
 
 .HomeTop-header ion-icon {
   padding-left: 10px;
+  height: 27px;
+  width: 27px;
 }
 
 .HomeTop-search {

@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonHeader, IonInput, IonLoading, IonPage, IonTitle, IonToolbar, useIonToast } from '@ionic/react';
+import { IonButton, IonCol, IonContent, IonHeader, IonInput, IonLoading, IonPage, IonTitle, IonToolbar, useIonToast } from '@ionic/react';
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { registerUser } from '../../firebaseConfig';
@@ -40,21 +40,18 @@ export const Register: React.FC = () => {
     }
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                    <IonTitle>Login</IonTitle>
-                </IonToolbar>
-            </IonHeader>
-            <IonContent fullscreen class='login'>
-                <IonLoading message="Please wait..." duration={0} isOpen={busy} />
-                <IonInput placeholder='Username'
-                    onIonChange={(e: any) => setUsername(e.target.value)} />
-                <IonInput placeholder='Password (atleast 6 chars)' type='password' 
-                    onIonChange={(e: any) => setPassword(e.target.value)} />
-                <IonInput placeholder='Confirm password' type='password' 
-                    onIonChange={(e: any) => setCpassword(e.target.value)} />
-                <IonButton onClick={register}>Login</IonButton>
-                <p>Already have an account? <Link to="/login">Login</Link></p>
+            <IonContent>
+                <img className='reg-img' src='https://media.giphy.com/media/l41lMTlCUccbXYqxG/giphy.gif' alt='hi!' />
+                <IonContent className='register ion-padding'>
+                    <IonCol className='reg-form'>
+                        <IonLoading message="Please wait..." duration={0} isOpen={busy} />
+                        <IonInput className='reg-input' placeholder='Username' onIonChange={(e: any) => setUsername(e.target.value)} />
+                        <IonInput className='reg-input' placeholder='Password (atleast 6 chars)' type='password' onIonChange={(e: any) => setPassword(e.target.value)} />
+                        <IonInput className='reg-input' placeholder='Confirm password' type='password' onIonChange={(e: any) => setCpassword(e.target.value)} />
+                        <IonButton className='reg-btn' onClick={register}>Login</IonButton>
+                        <p className='reg-txt'>Already have an account? <Link to="/login">Login</Link></p>
+                    </IonCol>
+                </IonContent>
             </IonContent>
         </IonPage>
     );

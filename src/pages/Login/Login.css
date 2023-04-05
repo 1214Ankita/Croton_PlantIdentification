@@ -1,0 +1,38 @@
+.login{
+    position: absolute;
+    border-radius: 25px;
+    top: 30%;
+}
+
+.login-img{
+    width: 100%;
+    background-size: cover;
+}
+
+.login-input{
+    background-color: var(--ion-color-tertiary-tint);
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 15px;
+    display: block;
+    opacity: 0.3;
+}
+
+.login-btn{
+    width: 274px;
+    margin-bottom: 6.5vh;
+    display: flex;
+    --border-radius: 25px;
+    margin-top: 11vh;
+}
+
+.login-txt{
+    margin: 0px;
+    padding: 10px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

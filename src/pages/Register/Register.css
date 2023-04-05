@@ -1,0 +1,38 @@
+.register{
+    position: absolute;
+    border-radius: 25px;
+    top: 30%;
+}
+
+.reg-img{
+    width: 100%;
+    background-size: cover;
+}
+
+.reg-input{
+    background-color: var(--ion-color-tertiary-tint);
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 15px;
+    display: block;
+    opacity: 0.3;
+}
+
+.reg-btn{
+    width: 274px;
+    margin-bottom: 2vh;
+    display: flex;
+    --border-radius: 25px;
+    margin-top: 6vh;
+}
+
+.reg-txt{
+    margin: 0px;
+    padding: 10px;
+}
+
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

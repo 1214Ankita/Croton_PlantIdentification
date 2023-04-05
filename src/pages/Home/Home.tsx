@@ -12,6 +12,8 @@ import Tab2 from '../Tab2';
 import { Login } from '../Login/Login';
 import { cube, home, person } from 'ionicons/icons';
 import { TabBar } from '../Routes';
+import { Fab } from '../../components/Fab';
+import { startScan } from '../../components/Capac';
 
 const Tab1: React.FC = () => {
   const history = useHistory()
@@ -24,16 +26,18 @@ const Tab1: React.FC = () => {
     history.replace('/')
   }
   return (
-    <IonPage>
+    <IonPage className='hideBg'>
       <IonContent>
         <HomeTop />
-        <IonContent class='ion-padding'>
+        <IonContent className='ion-padding'>
           <IonLoading message="Logging out..." duration={0} isOpen={busy} />
           <HomeList />
           <IonButton onClick={logout}>Logout</IonButton>
+          <IonButton expand='full' onClick={startScan}>Start Scan</IonButton>
         </IonContent>
       </IonContent>
       <TabBar />
+      <Fab/>
     </IonPage>
   );
 };

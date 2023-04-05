@@ -8,16 +8,6 @@ export const AppReducer = (state = initialState, action: any) => {
 					username: action.payload.split('@croton.com')
 				} 
 			};
-		// case 'INITIALIZE_EXPENSE':
-		// 	return{
-		// 		...state,
-		// 		expenses: action.payload,
-		// 	}
-		// case 'INITIALIZE_NAME':
-		// 	return{
-		// 		...state,
-		// 		name: action.payload,
-		// 	}
 		default:
 			return state;
 	}

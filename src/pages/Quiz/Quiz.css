@@ -1,0 +1,125 @@
+.quiz-main {
+    position: relative;
+    padding: 20px;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 4px 4px 4px 3px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.quiz_head {
+    font-style: normal;
+    font-size: 7vw;
+    color: black
+}
+
+.quiz_ques {
+    font-size: 5vw;
+    color: black
+}
+
+.quiz_options {
+    margin-top: 50px;
+}
+
+.options {
+    width: 80%;
+    /* height: 48px; */
+    margin: auto;
+    margin-bottom: 3vh;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 3.2vw;
+    padding: 3%;
+    background-color: var(--ion-color-secondary);
+}
+
+.quiz-selected {
+    background-color: var(--ion-color-primary-contrast);
+}
+
+.quiz-btn {
+    width: 50%;
+    /* height: 45px; */
+    background: #57855E;
+    border-radius: 10px;
+    margin-left: 25%;
+    padding: 5%;
+    font-size: 3.2vw;
+    color: var(--ion-color-primary-contrast);
+}
+
+.quiz_plant1 {
+    position: absolute;
+    width: 40%;
+    height: 42vw;
+    top: 8%;
+    left: -1%;
+    transform: rotate(-11.27deg);
+}
+
+.quiz_plant2 {
+    position: absolute;
+    width: 40%;
+    right: -2%;
+    top: 10%;
+    height: 42vw;
+    transform: rotate(24.54deg);
+}
+
+.quiz_back_arrow {
+    font-size: 25px;
+}
+
+
+/* Score CSS */
+.result {
+    position: absolute;
+    width: 70%;
+    height: 283px;
+    left: 15%;
+    top: 288px;
+    background: var(--ion-color-secondary);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+}
+
+.result_head {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 0px;
+}
+
+.result_subhead {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.score_bn {
+    width: 210px;
+    height: 48px;
+    display: flex;
+    margin: auto;
+    margin-top: 56px;
+    --background: var(--ion-color-primary);
+    color: var(--ion-color-primary-contrast);
+    letter-spacing: 0.25px;
+}
+
+.score_plant {
+    width: 100%;
+    height: 300px;
+}
+
+.score_well{
+    position: absolute;
+    margin-left: 102px;
+    margin-top: 226px;
+    font-size: 14px;
+}

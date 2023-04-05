@@ -28,36 +28,15 @@ const Routing: React.FC = () => {
     return (
         <IonApp>
             <IonReactRouter>
-                    <IonRouterOutlet>
-                        <Route exact path="/tab1"> <Tab1 /> </Route>
-                        <Route exact path="/tab2"> <Tab2 /> </Route>
-                        <Route path="/tab3"> <Tab3 /> </Route>
-                        <Route exact path="/login"> <Login /> </Route>
-                        <Route exact path="/register"> <Register /> </Route>
-                        <Route exact path="/"> <Redirect to="/login" /> </Route>
-                    </IonRouterOutlet>    
-            </IonReactRouter>
-            {/* ---Floating Action button - camera--- */}
-            <IonFab slot="fixed" horizontal="end">
-                <IonFabButton>
-                    <IonIcon icon={camera}></IonIcon>
-                </IonFabButton>
-                <IonFabList class='fab fab-scan' side='start'>
-                    <IonFabButton>
-                        <IonIcon icon={scan}></IonIcon>
-                    </IonFabButton>
-                {/* </IonFabList>
-                <IonFabList class='fab fab-img' side='start'> */}
-                    <IonFabButton>
-                        <IonIcon icon={image}></IonIcon>
-                    </IonFabButton>
-                </IonFabList>
-                <IonFabList class='fab fab-qrcode' side='top'>
-                    <IonFabButton>
-                        <IonIcon icon={qrCode}></IonIcon>
-                    </IonFabButton>
-                </IonFabList>
-            </IonFab>
+                <IonRouterOutlet>
+                    <Route exact path="/tab1"> <Tab1 /> </Route>
+                    <Route exact path="/tab2"> <Tab2 /> </Route>
+                    <Route exact path="/tab3"> <Tab3 /> </Route>
+                    <Route exact path="/login"> <Login /> </Route>
+                    <Route exact path="/register"> <Register /> </Route>
+                    <Route exact path="/"> <Redirect to="/login" /> </Route>
+                </IonRouterOutlet>
+            </IonReactRouter>         
         </IonApp>
     );
 }
