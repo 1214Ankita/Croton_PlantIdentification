@@ -1,0 +1,53 @@
+.info-title{
+    margin: 20px;
+    color: var(--ion-color-primary);    
+}
+
+.info-voice{
+    margin-left: 55%;
+}
+
+.info-name{
+    text-align: center;
+    font-weight: 900;
+    font-size: var(--ion-size-extra-big);
+    color: #57855e
+}
+
+.info-desc{
+    padding: 0px 6px 16px 6px;
+    font-weight: 400;
+    font-size: var(--ion-size-small);
+    color: #57855e;
+    text-align: center;
+    
+}
+
+.info-brief{
+    padding: 10px 6px 16px 6px;
+    font-weight: 400;
+    font-size: var(--ion-size-small);
+    color: #57855e;
+    text-align: center;
+}
+
+.info-bot{
+    padding: 15px;
+    font-weight: 400;
+    font-size: var(--ion-size-small);
+    font-weight: 600;
+    width: fit-content;
+    margin: auto;
+    color: #57855e;
+    text-align: center;
+}
+
+.info-msg{
+    display: block;
+    margin: auto;
+    height: 15vh;
+}
+
+.info-btns{
+    justify-content: space-evenly;
+}

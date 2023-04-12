@@ -1,0 +1,85 @@
+.Explore-main {
+    width: 100%;
+    height: 30px;
+    color: var(--ion-color-secondary-contrast);
+    margin-top: 60px;
+}
+
+.explore_head {
+    color: var(--ion-color-primary);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.Explore-bg {
+    background-size: cover;
+    width: 100vw;
+    height: 70%;
+    position: absolute;
+    z-index: -1;
+}
+
+.Explore-header {
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.Explore-header ion-icon {
+    padding-left: 10px;
+}
+
+.Explore-search {
+    height: 48px;
+    padding: 0px;
+    width: auto;
+    margin: 30px 16px;
+    --background:#ffff;
+    --placeholder-opacity: 1;
+    --icon-color: black;
+    border: 2px solid #daded8;
+    border-radius: 8px;
+    --color: var(--ion-black);
+    box-shadow: 0px 3px 0px rgb(0 0 0 / 10%);
+}
+
+
+.Explore-user {
+    width: 90%;
+    margin: 0px 5%;
+    background: #ede169;
+    border-radius: 20px;
+    padding: 14px;
+}
+
+.Explore-username {
+    margin: auto;
+}
+
+.Explore-username .welcome {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #57855e;
+}
+
+.Explore-username .username {
+    font-weight: 700;
+    font-size: 26px;
+    color: #57855e;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.Explore-usericon {
+    height: 97px;
+    border-radius: 50px;
+    width: 97px;
+    background-image: linear-gradient(180deg, #578857, #57885700);
+    justify-content: center;
+    align-items: center;
+}
+
+.Explore-usericon ion-avatar {
+    height: 63px;
+    width: 63px;
+}

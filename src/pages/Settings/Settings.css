@@ -1,0 +1,42 @@
+.set_main {
+    padding: 10px;
+    position: relative;
+}
+
+.set_back_arrow {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.set_header {
+    font-weight: var(--ion-weight-extra-light);
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.icon_cat {
+    border-bottom: 1px solid #D3C4C4;
+    display: flex;
+    flex-direction: row;
+}
+
+.set_icon {
+    margin-top: 20px;
+    width: 35px;
+    height: 35px;
+    margin-right: 12px;
+
+}
+
+.icon_title {
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+.set_plant {
+    position: absolute;
+    width: 101px;
+    height: 117px;
+    right:0;
+}

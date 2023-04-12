@@ -1,21 +1,19 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { TabBar } from './Routes';
 import './Tab3.css';
+import { Recog } from '../Recog';
+import { Info } from './Info/Info';
+import { PQuiz } from './Quiz/Quiz';
+import { QrPract } from '../components/Settings/Qr';
+import Profile from './Profile/Profile';
+import { QRcam } from '../components/Capac';
+import UProf  from './Profile/UProf';
 
 const Tab3: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+      <IonContent>
+      <Profile/>
       </IonContent>
       <TabBar/>
     </IonPage>

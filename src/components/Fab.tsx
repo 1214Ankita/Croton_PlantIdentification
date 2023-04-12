@@ -1,31 +1,24 @@
 import { IonFab, IonFabButton, IonFabList, IonIcon } from "@ionic/react";
 import { camera, image, qrCode, scan } from "ionicons/icons";
-import { startScan, usePhotoGallery } from '../components/Capac';
+// import { startScan, usePhotoGallery } from '../components/Capac';
+import { useHistory } from "react-router";
+import { QRcam } from "./Capac";
 
 
 
 export const Fab: React.FC = () => {
-    const { photos, takePhoto } = usePhotoGallery();
+
+    const history = useHistory();
+
+    // const { photos, takePhoto } = usePhotoGallery();
     return (
         <IonFab slot="fixed" horizontal="end">
-            <IonFabButton>
+            <IonFabButton onClick={(event) => {
+                    event.preventDefault();
+                    history.push('/qr')
+                }}>
                 <IonIcon icon={camera}></IonIcon>
             </IonFabButton>
-            <IonFabList className='fab fab-scan' side='start'>
-                <IonFabButton>
-                    <IonIcon icon={scan}></IonIcon>
-                </IonFabButton>
-            </IonFabList>
-            <IonFabList className='fab fab-img' side='start'>
-                <IonFabButton>
-                    <IonIcon icon={image}></IonIcon>
-                </IonFabButton>
-            </IonFabList>
-            <IonFabList className='fab fab-qrcode' side='top'>
-                <IonFabButton >
-                    <IonIcon icon={qrCode}></IonIcon>
-                </IonFabButton>
-            </IonFabList>
         </IonFab>
     );
 }

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@capacitor-community/barcode-scanner": "^3.0.1",
+    "@capacitor-community/text-to-speech": "^2.1.0",
     "@capacitor/android": "4.6.1",
     "@capacitor/app": "4.1.1",
     "@capacitor/camera": "^4.1.4",
@@ -12,8 +13,10 @@
     "@capacitor/ios": "4.6.1",
     "@capacitor/keyboard": "4.1.0",
     "@capacitor/status-bar": "4.1.1",
+    "@google-cloud/vision": "^3.1.2",
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/qr-scanner": "^5.36.0",
+    "@ionic-native/text-to-speech": "^5.36.0",
     "@ionic/pwa-elements": "^3.1.1",
     "@ionic/react": "^6.0.0",
     "@ionic/react-router": "^6.0.0",
@@ -32,6 +35,7 @@
     "firebase": "^9.15.0",
     "history": "^4.9.0",
     "ionicons": "^6.0.3",
+    "qr-scanner": "^1.4.2",
     "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -83,6 +87,7 @@
     "@capacitor/cli": "4.6.1",
     "@ionic/cli": "6.20.8",
     "@types/firebase": "^3.2.1",
+    "@types/react-qr-reader": "^2.1.4",
     "cordova-res": "0.15.4"
   },
   "description": "An Ionic project"

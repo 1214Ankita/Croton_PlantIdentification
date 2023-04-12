@@ -1,0 +1,58 @@
+.qr-card{
+    padding: 10px;
+    bottom: 0;
+    position: absolute;
+    width: -webkit-fill-available;
+    background: var(--ion-color-secondary);
+}
+
+.qr-msg{
+    width: fit-content;
+    display: block;
+    margin: auto;
+    font-size: 1.7em;
+    color: var(--ion-color-primary);
+    padding: 20px;
+    font-weight:bolder;
+}
+
+.qr-title{
+    text-align: center;
+    font-weight: 900;
+    font-size: var(--ion-size-extra-big);
+    color: #57855e
+}
+
+.qr-image{
+    display: block;
+    margin: auto;
+    height: 20vh;
+}
+
+.qr-desc{
+    padding: 0px 6px 16px 6px;
+    font-weight: 400;
+    font-size: var(--ion-size-small);
+    color: #57855e;
+    text-align: center;
+}
+
+.qr-voice{
+    display: block;
+    margin: 6px auto;
+    width: 65px;
+}
+
+.qr-bot{
+    text-align: center;
+    font-weight: 900;
+    font-size: var(--ion-size-small);
+    color: #57855e;
+    padding:0px;
+}
+
+.qr-msgimg{
+    display: block;
+    margin: auto;
+    height: 50%;
+}

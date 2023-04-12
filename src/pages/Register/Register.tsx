@@ -48,7 +48,7 @@ export const Register: React.FC = () => {
                         <IonInput className='reg-input' placeholder='Username' onIonChange={(e: any) => setUsername(e.target.value)} />
                         <IonInput className='reg-input' placeholder='Password (atleast 6 chars)' type='password' onIonChange={(e: any) => setPassword(e.target.value)} />
                         <IonInput className='reg-input' placeholder='Confirm password' type='password' onIonChange={(e: any) => setCpassword(e.target.value)} />
-                        <IonButton className='reg-btn' onClick={register}>Login</IonButton>
+                        <IonButton className='reg-btn' onClick={register}>Register</IonButton>
                         <p className='reg-txt'>Already have an account? <Link to="/login">Login</Link></p>
                     </IonCol>
                 </IonContent>

@@ -5,6 +5,7 @@ import styles from './SearchBar.module.css';
 const SearchBar = () => {
   const [value, setValue] = useState('');
   const [suggestions, setSuggestions] = useState([]);
+  const [hideSuggestions, setHideSuggestions] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {

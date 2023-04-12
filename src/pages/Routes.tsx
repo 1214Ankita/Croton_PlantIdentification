@@ -23,6 +23,16 @@ import React, { useEffect, useState } from 'react';
 import { getCurrentUser } from '../firebaseConfig'
 import { useDispatch } from 'react-redux';
 import './Routes.css'
+import { QRcam } from '../components/Capac';
+import {Settings} from './Settings/Settings';
+import { Privacy } from '../components/Settings/Privacy';
+import { Help } from '../components/Settings/Help';
+import { About } from '../components/Settings/About';
+import { Info } from './Info/Info';
+import MainQuiz from './Quiz/MainQuix';
+import { Details1} from '../components/pract/Details';
+import Feed_back from './Feedback/Feed_back';
+import UProf  from './Profile/UProf';
 
 const Routing: React.FC = () => {
     return (
@@ -32,6 +42,19 @@ const Routing: React.FC = () => {
                     <Route exact path="/tab1"> <Tab1 /> </Route>
                     <Route exact path="/tab2"> <Tab2 /> </Route>
                     <Route exact path="/tab3"> <Tab3 /> </Route>
+                    <Route exact path="/qr"> <QRcam /> </Route>
+                    <Route exact path="/info"> <Info /> </Route>
+                    <Route exact path="/details/:id"><Details1 /></Route>
+                    {/* <Route exact path="/details/102"><Details2/></Route>
+                    <Route exact path="/details/103"><Details3/></Route>
+                    <Route exact path="/details/104"><Details4/></Route> */}
+                    <Route exact path="/plantquiz"> <MainQuiz /> </Route>
+                    <Route exact path="/uprof"> <UProf /> </Route>
+                    <Route exact path="/feedback"><Feed_back/></Route>
+                    <Route exact path="/settings"><Settings/></Route>
+                    <Route exact path="/priv"> <Privacy /> </Route>
+                    <Route exact path="/help"> <Help /> </Route>
+                    <Route exact path="/about"> <About /> </Route>
                     <Route exact path="/login"> <Login /> </Route>
                     <Route exact path="/register"> <Register /> </Route>
                     <Route exact path="/"> <Redirect to="/login" /> </Route>

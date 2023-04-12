@@ -1,27 +1,26 @@
 import { IonButton, IonCol, IonContent, IonIcon, IonLabel, IonLoading, IonPage, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import './Home.css';
-import { HomeTop } from '../../components/Home/HomeTop';
-import { HomeList } from '../../components/Home/HomeList';
 
-import { TabBar } from '../Routes';
-import { Fab } from '../../components/Fab';
-import { Settings } from '../Settings/Settings';
 
-const Tab1: React.FC = () => {
+import { TabBar } from './Routes';
+
+import { ExploreTop } from '../components/Home/Explore/ExploreTop';
+import { ExploreList } from '../components/Home/Explore/ExploreList';
+
+const Tab2: React.FC = () => {
   return (
     <IonPage className='main-cont'>
       <IonContent className='main-cont'>
         <IonCol>
-          <HomeTop />
+          <ExploreTop />
           <IonCol className='ion-padding'>
-            <HomeList />            
+            <ExploreList />            
           </IonCol>
         </IonCol>
       </IonContent>
       <TabBar />
-      <Fab />
     </IonPage>
   );
 };
 
-export default Tab1;
+export default Tab2;

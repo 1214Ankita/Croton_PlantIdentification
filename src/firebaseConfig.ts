@@ -15,6 +15,7 @@ const config = {
 };
 
 firebase.initializeApp(config);
+export const db = firebase.firestore();
 
 export function getCurrentUser(){
     return new Promise((resolve, reject)=>{
@@ -52,6 +53,21 @@ export async function registerUser(username: string, password: string) {
     }
 }
 
+export const addUserProfile = async (userId: string, username: string) => {
+    const userRef = firebase.firestore().collection('users').doc(userId);
+    try {
+      await userRef.set({
+        username: username,
+        profileImageUrl: null, // add any additional fields you want to store
+      });
+    } catch (error) {
+      console.error('Error adding user profile to Firestore', error);
+    }
+  };
+
 export function logoutuser(){
     return firebase.auth().signOut()
 }
+
+
+

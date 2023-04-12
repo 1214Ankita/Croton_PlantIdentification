@@ -2,7 +2,7 @@
     position: relative;
     padding: 20px;
     width: 70%;
-    height: 70%;
+    height: 100%;
     margin: auto;
     margin-top: 10%;
     box-shadow: 4px 4px 4px 3px rgb(0 0 0 / 25%);
@@ -80,7 +80,8 @@
 .result {
     position: absolute;
     width: 70%;
-    height: 283px;
+    height: auto;
+    text-align: center;
     left: 15%;
     top: 288px;
     background: var(--ion-color-secondary);
